@@ -3,10 +3,11 @@ package com.tg.processor.model;
 public class EmployeeBillingInfo {
 	
 	private String empId;
-	private String name;
 	private String projectId;
+	private String projectName;
 	private String wklybillableHour;
 	private String totalBillableHour;
+	private String location;
 	
 	public String getEmpId() {
 		return empId;
@@ -14,12 +15,7 @@ public class EmployeeBillingInfo {
 	public void setEmpId(String empId) {
 		this.empId = empId;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 	public String getProjectId() {
 		return projectId;
 	}
@@ -38,10 +34,24 @@ public class EmployeeBillingInfo {
 	public void setTotalBillableHour(String totalBillableHour) {
 		this.totalBillableHour = totalBillableHour;
 	}
-	@Override
-	public String toString() {
-		return "EmployeeBillingInfo [empId=" + empId + ", name=" + name + ", projectId=" + projectId
-				+ ", wklybillableHour=" + wklybillableHour + ", totalBillableHour=" + totalBillableHour + "]";
+	
+	public String getProjectName() {
+		return projectName;
+	}
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
 	}
 	
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	@Override
+	public String toString() {
+		return "EmployeeBillingInfo [empId=" + empId + ", projectId=" + projectId + ", projectName="
+				+ projectName + ", wklybillableHour=" + wklybillableHour + ", totalBillableHour=" + totalBillableHour
+				+ "]";
+	}
 }

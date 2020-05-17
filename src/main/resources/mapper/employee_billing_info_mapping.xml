@@ -1,0 +1,16 @@
+<beanio xmlns="http://www.beanio.org/2012/03" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+  <stream name="billinginfos" format="fixedlength">
+  
+    <record name="employeebillinginfo" class="com.tg.processor.model.EmployeeBillingInfo">
+      <field name="projectId" padding=" " length="11" />
+      <field name="projectName" padding=" " length="15" />
+      <field name="empId" padding=" " length="7" />
+      <field name="location" padding=" " length="9" />
+      <field name="wklybillableHour" padding=" " length="3" />
+      <field name="totalBillableHour" padding=" " length="3" />
+    </record>
+  </stream>
+</beanio>

@@ -56,6 +56,13 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-test</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.beanio/beanio -->
+		<dependency>
+		    <groupId>org.beanio</groupId>
+		    <artifactId>beanio</artifactId>
+		    <version>2.1.0</version>
+		</dependency>
+		
 	</dependencies>
 	
 	<build>
