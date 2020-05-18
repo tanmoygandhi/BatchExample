@@ -1,9 +1,5 @@
 package com.tg.processor.config;
 
-import java.io.File;
-
-import org.beanio.BeanReader;
-import org.beanio.BeanWriter;
 import org.beanio.InvalidRecordException;
 import org.beanio.RecordContext;
 import org.beanio.StreamFactory;
@@ -14,9 +10,7 @@ import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
-import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
-import org.springframework.batch.core.launch.support.SimpleJobLauncher;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemWriter;
